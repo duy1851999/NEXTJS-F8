@@ -30,7 +30,7 @@ const Free_Courses_Grid = () => {
                     />
                 </button>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5">
                 {courses_free.map((course_free, index) => (
                     <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105 py-4">
                         <Image src={course_free.image} alt={course_free.title} width={312} height={175} className="w-full h-auto" />

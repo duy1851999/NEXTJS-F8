@@ -24,17 +24,21 @@ import VideoMark from "@/components/VideoMark";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-[auto_1fr] min-h-screen gap-6 sm:p-6 font-geist-sans mt-24">
+    <div className="flex flex-row min-h-screen font-geist-sans mt-24">
       {/* Sidebar */}
-      <SideBarMenu />
+      <div className="hidden md:w-1/12 md:-mt-4 md:block ">
+        <SideBarMenu />
+      </div>
 
       {/* Nội dung chính */}
-      <div className="flex flex-col w-full gap-6 ml-4 pl-24">
-        <Slide />
-        <Pro_Courses_Grid />
-        <Free_Courses_Grid />
-        <ViewMark />
-        <VideoMark />
+      <div className="w-11/12 px-4 sm:px-0 md:px-0">
+        <div className="flex flex-col w-full gap-6">
+          <Slide />
+          <Pro_Courses_Grid />
+          <Free_Courses_Grid />
+          <ViewMark />
+          <VideoMark />
+        </div>
       </div>
     </div>
   );

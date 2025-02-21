@@ -1,26 +1,29 @@
 'use client'
 import Image from "next/image";
-
+import { IconLoa } from "../components/Icon"
 const SidebarMenu = () => {
     return (
-        <div className="fixed top-28 left-0 flex justify-start items-start">
-            <aside className="rounded-lg w-30 pl-5">
+        <div className="hidden md:block fixed left-0 justify-center items-center">
+            <aside className="rounded-lg">
                 <ul>
-                    <li className="flex flex-col  justify-start items-center p-4">
+                    <li className="flex flex-col justify-between items-center p-4 ml-4">
                         <Image src="/trangchu.svg" alt="trangchu" width={38} height={38} className="rounded-lg w-6 h-6 cursor-pointer" />
                         <span className="mt-2">Trang chủ</span>
                     </li>
-                    <li className="flex flex-col  justify-start items-center p-4">
+                    <li className="flex flex-col  justify-between items-center p-4  ml-4">
                         <Image src="/lotrinh.svg" alt="lotrinh" width={38} height={38} className="rounded-lg w-6 h-6 cursor-pointer" />
                         <span className="mt-2">Lộ trình</span>
                     </li>
-                    <li className="flex flex-col justify-start items-center p-4">
+                    <li className="flex flex-col justify-between items-center p-4  ml-4">
                         <Image src="/baiviet.svg" alt="baiviet" width={38} height={38} className="rounded-lg w-6 h-6 cursor-pointer" />
                         <span className="mt-2">Bài viết</span>
                     </li>
-                    <li className="flex flex-col justify-start items-center p-4 rounded-3xl cursor-pointer mt-96">
-                        <div className="mt-20">
-                            <Image src="/loa.jpg" alt="loa" width={38} height={38} className="rounded-lg" />
+                    {/* <li className="fixed bottom-0 left-0 px-8 py-16">
+                        <IconLoa />
+                    </li> */}
+                    <li className="fixed bottom-0 left-0 px-4 py-16">
+                        <div className="w-12 h-12 flex items-center justify-center bg-white rounded-full border border-gray-300 shadow-lg">
+                            <IconLoa />
                         </div>
                     </li>
                 </ul>

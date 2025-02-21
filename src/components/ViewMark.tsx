@@ -139,7 +139,7 @@ const courses_free = [
     { image: "/ViewMark/8.png", title: "Học như thế nào là phù hợp?", author: "Ngoc Tien Pham", view: "/ViewMark/PhamTienNgoc.webp", course_time: "4 phút đọc" },
 ];
 
-const VideoMark = () => {
+const ViewMark = () => {
     return (
         <div className="p-6">
             {/* Header */}
@@ -152,14 +152,14 @@ const VideoMark = () => {
             </div>
 
             {/* Grid Layout */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 {courses_free.map((course_free, index) => (
                     <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105 py-4">
                         {/* Ảnh khóa học */}
                         {/* <div className="w-full aspect-[16/9] relative">
                             <Image src={course_free.image} alt={course_free.title} layout="fill" className="object-cover" />
                         </div> */}
-                        <div className="w-[312px] h-[175px] relative">
+                        <div className="relative">
                             <Image
                                 src={course_free.image}
                                 alt={course_free.title}
@@ -193,4 +193,4 @@ const VideoMark = () => {
     );
 };
 
-export default VideoMark;
+export default ViewMark;
