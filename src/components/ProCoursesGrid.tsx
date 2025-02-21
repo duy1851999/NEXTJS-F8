@@ -18,7 +18,7 @@ const Pro_Courses_Grid = () => {
                             <h3 className="text-lg font-semibold">{course.title}</h3>
                             <p className="text-sm text-gray-600">
                                 <span className="line-through text-gray-400 ">{course.org_price}</span>{' '}
-                                <span className="text-red-500 font-bold px-0 sm:px-2 md:px-3 lg:px-6">{course.price}</span>
+                                <span className="text-red-500 font-bold px-0 sm:px-2 md:px-3 lg:px-14">{course.price}</span>
                             </p>
                             {/* <div className="flex flex-row gap-6">
                                 <p className="text-sm text-gray-500">👤 {course.author}</p>
